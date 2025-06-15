@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Ernest DJEVO</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Section Accueil -->
+  <header class="header">
+      <div class="logo">DJEVO <span>Ernest</span></div>
+      <div class="burger" onclick="toggleMenu()">☰</div>
+      <nav class="menu">
+        <a href="#accueil" class="active">Accueil</a>
+        <a href="#apropos">À propos</a>
+        <a href="#projets">Projets</a>
+        <a href="#competences">Compétences</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="accueil" class="intro">
+    Je suis <span class="prenom">Ernest</span>, développeur passionné par le web et le design !
+    <a href="#projets" class="bouton-projets">VOIR MES PROJETS</a>
+    <div class="section">
+      <div class="texte"></div>
+      <div class="visuel">
+        <img src="photo3.jpg" class="photo-cercle" alt="Photo de profil">
+      </div>
+    </div>
+  </section>
+
+  <!-- Section À propos -->
+  <section id="apropos" class="about-section">
+    <div class="profile-container">
+      <img src="profil.png" alt="Photo de profil de Ernest" class="profile-img">
+      <div class="about-text">
+        <h2>À propos</h2>
+        <p style="text-align: justify; line-height: 1.5;">
+          Passionné par le développement Web, j’ai développé une expertise en informatique bureautique avec une solide maîtrise des outils comme Word, Excel, PowerPoint, Photoshop et Illustrator. Titulaire d’une licence en Lettres modernes, j’ai aussi suivi une formation en intelligence artificielle. Engagé dans la gouvernance estudiantine, j’ai occupé des fonctions de leadership. Mes passions incluent le secrétariat administratif, l'écriture et le développement associatif. Mon objectif est d’allier rigueur intellectuelle et créativité pour offrir des solutions analytiques et stratégiques.
+        </p>
+        <a href="CV Ernest.pdf" class="download-btn" download>Télécharger mon CV de D-CLIC</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Projets -->
+  <section id="projets" class="projects">
+    <h2>MES PROJETS</h2>
+    <div class="projets-container">
+      <div class="projet">
+        <p>Un mini-jeu interactif en JavaScript…</p>
+        <div class="bouton-container">
+          <a href="Projet.html" class="bouton-projets">VOIR</a>
+        </div>
+      </div>
+      <div class="projet">
+        <p>Un projet de l'UEZ super cool...</p>
+        <div class="bouton-container">
+          <a href="Projet2.html" class="bouton-projets">VOIR</a>
+        </div>
+      </div>
+      <div class="projet">
+        <p>Projet de création du site de l'UEZ</p>
+        <div class="bouton-container">
+          <a href="projets.html" class="bouton-projets">VOIR</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Compétences -->
+  <section id="competences" class="competences">
+    <h2>Compétences</h2>
+    <section class="tableau-competences">
+      <table>
+        <thead>
+          <tr>
+            <th>Logiciels</th>
+            <th>Hard Skills</th>
+            <th>Soft Skills</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <span class="nom">Word</span>
+              <div class="barre"><div class="niveau" style="width: 96%;"></div></div>
+            </td>
+            <td>
+              <span class="nom">HTML / CSS</span>
+              <div class="barre"><div class="niveau" style="width: 90%;"></div></div>
+            </td>
+            <td>
+              <span class="nom">Gestion de projet</span>
+              <div class="barre"><div class="niveau" style="width: 85%;"></div></div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span class="nom">Excel</span>
+              <div class="barre"><div class="niveau" style="width: 56%;"></div></div>
+            </td>
+            <td>
+              <span class="nom">JavaScript</span>
+              <div class="barre"><div class="niveau" style="width: 75%;"></div></div>
+            </td>
+            <td>
+              <span class="nom">Résolution de problème</span>
+              <div class="barre"><div class="niveau" style="width: 80%;"></div></div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span class="nom">PowerPoint</span>
+              <div class="barre"><div class="niveau" style="width: 60%;"></div></div>
+            </td>
+            <td>
+              <span class="nom">Photoshop</span>
+              <div class="barre"><div class="niveau" style="width: 70%;"></div></div>
+            </td>
+            <td>
+              <span class="nom">Adaptabilité</span>
+              <div class="barre"><div class="niveau" style="width: 75%;"></div></div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span class="nom">Internet</span>
+              <div class="barre"><div class="niveau" style="width: 45%;"></div></div>
+            </td>
+            <td>
+              <span class="nom">VS Code</span>
+              <div class="barre"><div class="niveau" style="width: 65%;"></div></div>
+            </td>
+            <td>
+              <span class="nom">Esprit d'équipe</span>
+              <div class="barre"><div class="niveau" style="width: 82%;"></div></div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    
+      </div>    
+  </section>
+
+  <!-- Section Contact -->
+  <section id="contact">
+    <h2>Contactez-moi</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Nom" required>
+      <input type="email" placeholder="Email" required>
+      <textarea rows="5" placeholder="Votre message" required></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Ernest DJEVO. Formation D-clic_OIF. Tous droits réservés.</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.querySelector('.menu').classList.toggle('open');
+    }
+
+    const sections = document.querySelectorAll("section");
+    const navLinks = document.querySelectorAll(".menu a");
+
+    window.addEventListener("scroll", () => {
+      let current = "";
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (pageYOffset >= sectionTop - 100) {
+          current = section.getAttribute("id");
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove("active");
+        if (link.getAttribute("href") === `#${current}`) {
+          link.classList.add("active");
+        }
+      });
+    });
+  </script>
+</body>
+</html>

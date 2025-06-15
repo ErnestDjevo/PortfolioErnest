@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fiche Projet UEZ</title>
+  <style>
+    .fiche-projet {
+      max-width: 900px;
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      padding: 28px 32px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #333;
+      margin: 40px auto;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .fiche-projet:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .entete-projet h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 6px;
+      color: #222;
+    }
+
+    .entete-projet .sous-titre {
+      font-size: 1.1rem;
+      font-weight: 500;
+      color: #555;
+      margin-top: 0;
+    }
+
+    .contenu-projet {
+      display: flex;
+      gap: 32px;
+      flex-wrap: nowrap;
+      align-items: flex-start;
+    }
+
+    .description-projet {
+      flex: 1 1 400px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      text-align: justify;
+      line-height: 2;
+      color: #555;
+      text-align-last: left; /* pour bien aligner la dernière ligne à gauche */
+    }
+
+    .description-projet p {
+      margin: 0;
+    }
+
+    .infos-cle {
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
+      font-size: 1rem;
+      color: #444;
+    }
+
+    .infos-cle li {
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .infos-cle li strong {
+      color: #1a73e8;
+      min-width: 110px;
+      display: inline-block;
+    }
+
+    .cta {
+      align-self: flex-start;
+      padding: 21px 35px;
+      background-color: #1a73e8;
+      color: white;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1.1rem;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+      user-select: none;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    .cta:hover,
+    .cta:focus {
+      background-color: #155ab6;
+      outline: none;
+      box-shadow: 0 0 0 5px rgba(26, 115, 232, 0.4);
+    }
+
+    .image-projet {
+      flex: 0 0 150px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-start;
+    }
+
+    .image-projet img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      display: block;
+    }
+
+    @media (max-width: 680px) {
+      .contenu-projet {
+        flex-direction: column;
+        gap: 40px;
+      }
+
+      .image-projet {
+        flex: none;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<section class="fiche-projet">
+  <div class="entete-projet">
+    <h2>Création du site web de l’UEZ</h2>
+    <p class="sous-titre">Projet web institutionnel – Za-Kpota</p>
+  </div>
+
+  <div class="contenu-projet">
+    <div class="description-projet">
+      <p>
+        Conception et mise en ligne du site officiel de l’Union des Étudiants de Za-Kpota (UEZ), conçu pour regrouper les informations institutionnelles, promouvoir les activités et fluidifier la communication entre les membres.
+      </p>
+
+      <ul class="infos-cle">
+        <li><strong>🎯 Objectif :</strong> Centraliser les actualités, les documents et les projets de l’UEZ</li>
+        <li><strong>🧠 Compétences :</strong> UX/UI, HTML/CSS, structuration de contenu, communication</li>
+        <li><strong>🛠️ Outils :</strong> Visual Studio Code, Trello, Canva, GitHub</li>
+        <li><strong>💡 Résultat :</strong> Un site responsive, clair et institutionnellement valorisant</li>
+      </ul>
+
+      <a href="#" class="cta" role="button" aria-label="Voir le site de l'UEZ">VOIR LE SITE</a>
+    </div>
+
+    <div class="image-projet">
+      <img src="Image UEZ.jpg" alt="Logo UEZ" />
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
